@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/main.js"></script>
+    <title>This are thing to does</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.13.0/Sortable.min.js"
+        integrity="sha512-5x7t0fTAVo9dpfbp3WtE2N6bfipUwk7siViWncdDoSz2KwOqVC1N9fDxEOzk0vTThOua/mglfF8NO7uVDLRC8Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div id="putinbowl">
+        <h1>
+            The thing need did!
+        </h1>
+        <div id="tasks">
+            <legend>Task List</legend>
+            <input type="text" id="inputs" placeholder="Put things here">
+            <button type="button" id="press">ADD</button>
+
+            <!-- Listbox: <select name="tasklist" id="tasklist"></select> -->
+        </div>
+
+
+
+        <!-- <fieldset>
+
+        </fieldset> -->
+        <div id="showtasks" class="draggable">
+            Tasks to be done are listed here
+            <br>
+            Check the box if task is completed
+            <br>
+            
+        </div>
+    </div>
+    <script>
+        var dragBox = document.querySelector('.draggable');
+        new Sortable(dragBox,
+        {
+            animation: 400
+        })
+    </script>
+</body>
+</html>
